@@ -3813,7 +3813,7 @@ lru-cache@^4.0.1, lru-cache@^4.1.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-luma.gl@>=5.2.0-alpha.4:
+luma.gl@>=5.2.0-alpha.6:
   version "5.2.0-alpha.7"
   resolved "https://registry.yarnpkg.com/luma.gl/-/luma.gl-5.2.0-alpha.7.tgz#bb6582a8b85d42a61c9b0d8165ebaa35a5bed858"
   dependencies:
@@ -6194,7 +6194,7 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-viewport-mercator-project@>=5.1.0-alpha.1:
+viewport-mercator-project@>=5.1.0-alpha.2:
   version "5.1.0-alpha.2"
   resolved "https://registry.yarnpkg.com/viewport-mercator-project/-/viewport-mercator-project-5.1.0-alpha.2.tgz#797eaed537553d8ced70ede5bf2522ceb01e7f10"
   dependencies:
