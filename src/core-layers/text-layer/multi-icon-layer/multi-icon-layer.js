@@ -18,7 +18,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import {IconLayer, experimental} from 'deck.gl';
+import IconLayer from '../../icon-layer/icon-layer';
+import {experimental} from '../../../core';
 const {enable64bitSupport} = experimental;
 
 import vs from './multi-icon-layer-vertex.glsl';

@@ -1,10 +1,4 @@
-import {
-  MeshLayer,
-  PathOutlineLayer,
-  PathMarkerLayer,
-  SolidPolygonLayer,
-  TextLayer
-} from 'deck.gl-layers';
+import {MeshLayer, PathOutlineLayer, PathMarkerLayer, SolidPolygonLayer} from 'deck.gl-layers';
 
 // TODO: remove hard path once deck.gl-layers published with GPUScreenGridLayer
 import GPUScreenGridLayer from '../../../../src/experimental-layers/src/gpu-screen-grid-layer/gpu-screen-grid-layer';
@@ -167,35 +161,6 @@ const SolidPolygonLayerExample = {
   }
 };
 
-const TextLayerExample = {
-  layer: TextLayer,
-  getData: () => dataSamples.points.slice(0, 50),
-  props: {
-    id: 'text-layer',
-    getText: x => `${x.PLACEMENT}-${x.YR_INSTALLED}`,
-    getPosition: x => x.COORDINATES,
-    getColor: x => [153, 0, 0],
-    getSize: x => 32,
-    getAngle: x => 0,
-    sizeScale: 1,
-    getTextAnchor: x => 'start',
-    getAlignmentBaseline: x => 'center',
-    getPixelOffset: x => [10, 0]
-  }
-};
-
-const TextLayer100KExample = {
-  layer: TextLayer,
-  getData: dataSamples.getPoints100K,
-  props: {
-    id: 'text-layer-100k',
-    getText: x => 'X',
-    getPosition: x => x,
-    getColor: x => [0, 0, 200],
-    sizeScale: 1
-  }
-};
-
 const GPUScreenGridLayerExample = {
   layer: GPUScreenGridLayer,
   getData: () => dataSamples.points,
@@ -218,8 +183,6 @@ export default {
     'PathMarkerLayer (LngLat Offset)': PathMarkerExampleLngLatOffset,
     'PathMarkerLayer (Meter)': PathMarkerExampleMeter,
     'New SolidPolygonLayer': SolidPolygonLayerExample,
-    TextLayer: TextLayerExample,
-    'TextLayer (100K)': TextLayer100KExample,
     GPUScreenGridLayer: GPUScreenGridLayerExample
   }
 };
